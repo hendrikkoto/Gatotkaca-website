@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gatot Kaca - The Knight of Pringgandani</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-gold: #D4AF37;
+            --deep-red: #8B0000;
+            --dark-bg: #1a1a1a;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+        }
+        /* Navbar Styling */
+        .navbar {
+            background-color: var(--dark-bg);
+            border-bottom: 3px solid var(--primary-gold);
+        }
+        .navbar-brand {
+            color: var(--primary-gold) !important;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        /* Hero Section - Memastikan Background Rapi */
+        .hero-section {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                        url('assets/pewayangan.jpeg'); 
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed; /* Membuat efek parallax halus */
+            color: white;
+            padding: 120px 0;
+            text-align: center;
+        }
+        .hero-title {
+            font-size: 4rem;
+            color: var(--primary-gold);
+            text-shadow: 2px 2px 4px #000;
+            font-weight: 800;
+        }
+
+        /* Perbaikan Gambar Agar Tidak Amburadul */
+        .card-img-custom {
+            width: 100%;
+            height: 250px; /* Tentukan tinggi yang sama untuk semua gambar */
+            object-fit: cover; /* Memotong gambar secara proporsional agar memenuhi kotak */
+            object-position: center;
+            border-radius: 8px 8px 0 0;
+        }
+
+        .card {
+            transition: transform 0.3s;
+            border: none;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .section-padding {
+            padding: 80px 0;
+        }
+        .about-section {
+            background-color: var(--deep-red);
+            color: white;
+        }
+        footer {
+            background-color: var(--dark-bg);
+            color: #888;
+            padding: 30px 0;
+            text-align: center;
+            border-top: 2px solid var(--primary-gold);
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">GATOT KACA</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#content">Powers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home" class="hero-section">
+        <div class="container">
+            <h1 class="hero-title">GATOT KACA</h1>
+            <p class="lead text-uppercase fw-bold">"Muscle of Wire, Bone of Iron"</p>
+        </div>
+    </header>
+
+    <main id="content" class="container section-padding">
+        <div class="row g-4 text-center"> <div class="col-md-4">
+                <div class="card h-100 shadow">
+                    <img src="assets/gatotkaca-1.jpg" class="card-img-custom" alt="Flight Power">
+                    <div class="card-body">
+                        <h3 class="card-title" style="color: var(--deep-red);">Flight</h3>
+                        <p class="card-text">With the Basunanda vest, Gatot Kaca can fly across the skies without wings.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 shadow">
+                    <img src="assets/gatotkaca-2.png" class="card-img-custom" alt="Invulnerability Power">
+                    <div class="card-body">
+                        <h3 class="card-title" style="color: var(--deep-red);">Invulnerability</h3>
+                        <p class="card-text">His skin is as tough as iron, forged in the Candradimuka crater.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 shadow">
+                    <img src="assets/gatotkaca-3.jpg" class="card-img-custom" alt="Strength Power">
+                    <div class="card-body">
+                        <h3 class="card-title" style="color: var(--deep-red);">Strength</h3>
+                        <p class="card-text">A legendary warrior with unmatched physical power in the Bharatayuddha war.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section id="about" class="about-section section-padding">
+        <div class="container text-center">
+            <h2 class="display-5 fw-bold" style="color: var(--primary-gold);">About Gatot Kaca</h2>
+            <hr class="bg-light mx-auto" style="width: 60px; height: 4px; opacity: 1;">
+            <p class="mt-4 lead px-md-5">Gatot Kaca is a central character in the Mahabharata epic, particularly in Indonesian Wayang. He is the son of Bima and Arimbi, known as the protector of the Kingdom of Pringgandani.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p class="mb-0">&copy; 2026 Gatot Kaca Official Website. Built for the Legend.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
